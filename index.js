@@ -64,20 +64,3 @@ function tgupdates(params, options) {
         req.end();
     });
 }
-
-tgupdates({
-	text: "Testtttt",
-	test: 'shakedos'
-}, {
-	chatId: '303052361',
-	token: 'weUseTelegramF0rUpdates',
-	timeout: 1000*10,
-	request: {
-	    host: 'tgupdates.shakedos.com',
-	    port: 443,
-	    method: 'POST',
-	    path: '/telegram/appUpdates'
-	}
-}).then(function(result){
-	console.log('example',result);
-});
